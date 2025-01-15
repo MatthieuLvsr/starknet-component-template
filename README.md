@@ -41,7 +41,7 @@ The `core` folder defines the main `CounterContract`, which integrates the compo
 The `interfaces` folder defines traits (like `ICounter`) that specify the contract's public API.
 
 #### 4. **Tests**
-The `tests` folder contains integration tests to validate the functionality of the contract, including initialization, incrementing the counter, and event emission.
+The `tests` folder contains integration tests to validate the functionality of the contract, including initialization, incrementing and decrementing the counter, and event emission.
 
 ---
 
@@ -76,7 +76,7 @@ To get started with this project, you need to have the following tools installed
 
 ### Counter Component (`src/component/counter.cairo`)
 
-This file defines the core logic for the counter, including the `increment` function and state management. It also emits an `Increment` event.
+This file defines the core logic for the counter, including the `increment` and `decrement` functions and state management. It also emits `Increment` and `Decrement` events.
 
 ### Counter Contract (`src/core/counter.cairo`)
 
@@ -95,11 +95,13 @@ The `tests/integration_tests.cairo` file contains integration tests for the foll
 1. **Initialization**
    - Verifies that the counter starts at `0`.
 
-2. **Increment**
+2. **Functions**
    - Ensures that calling `increment` updates the counter's value.
+   - Ensures that calling `decrement` updates the counter's value.
 
 3. **Event Emission**
    - Validates that an `Increment` event is emitted with the correct value.
+   - Validates that a `Decrement` event is emitted with the correct value.
 
 ### Example Test Case
 ```rust
