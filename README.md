@@ -13,20 +13,20 @@ The project is organized into the following structure:
 
 ```
 .
-├── LICENSE
-├── README.md
-├── Scarb.lock
-├── Scarb.toml
-├── src
-│   ├── component
-│   │   └── counter.cairo
-│   ├── core
-│   │   └── counter.cairo
-│   ├── interfaces
-│   │   └── counter.cairo
-│   └── lib.cairo
-└── tests
-    └── integration_tests.cairo
+├── 🔑 LICENSE
+├── 📕 README.md
+├── 🔒 Scarb.lock
+├── 📦 Scarb.toml
+├── 📂 src
+│   ├── 📂 component
+│   │   └── 🗒️ counter.cairo
+│   ├── 📂 core
+│   │   └── 🗒️ counter.cairo
+│   ├── 📂 interfaces
+│   │   └── 🗒️ counter.cairo
+│   └── 🗒️ lib.cairo
+└── 📂 tests
+    └── 🗒️ integration_tests.cairo
 ```
 
 ### Key Components
